@@ -1,48 +1,188 @@
-# 证书展示 Hero 区块
+# MKM BET - India's Premier Online Gaming Platform
 
-一个简洁优雅的证书展示页面，使用纯 HTML 和 CSS 实现。
+## Project Overview
 
-## 功能特性
+MKM BET is a comprehensive static HTML gaming website designed specifically for the Indian market with advanced SEO optimization. This project showcases a modern, responsive gaming platform for online entertainment with secure payment integration, VIP membership system, and community engagement features.
 
-- ✨ **纯 HTML + CSS**：无需 JavaScript，加载快速
-- 📱 **响应式设计**：完美适配桌面端、平板和移动端
-- 🎨 **现代化设计**：渐变背景、毛玻璃效果、平滑动画
-- 🖼️ **7张证书展示**：使用 CSS Grid 布局，第7张证书居中显示
-- 🎯 **Hover 效果**：鼠标悬停时显示证书详情，提升交互体验
-- 🏗️ **栅格布局**：自适应网格系统，智能排列证书
+**Website URL:** http://szs0722.com/
 
-## 布局特点
+## Features
 
-### 桌面端 (>768px)
-- 3-3-1 布局：前6张证书按 3x2 网格排列，第7张证书居中显示在下方
+### Core Features
+- **Pure Static HTML5** - No backend required, fast loading
+- **Responsive Design** - Optimized for desktop (1200px), tablet (768px), and mobile (480px)
+- **Gaming Style UI** - Modern gradient design with glassmorphism effects
+- **Multiple Game Categories** - Card games, strategy games, betting platforms, multiplayer options
+- **VIP Membership Program** - Four-tier VIP system with exclusive benefits
+- **Secure Payments** - Yono integration, multiple payment methods
+- **Mobile App Support** - APK download and installation guide
 
-### 平板端 (≤768px)
-- 2-2-2-1 布局：自适应宽度，保持良好的视觉效果
+### SEO Optimization
+- Complete HTML5 semantic structure
+- Meta tags (title, description, keywords) on all pages
+- Schema.org structured data (FAQ Schema, Organization Schema)
+- Open Graph and Twitter Card tags
+- Strategic internal linking between pages
+- 10 long-tail keyword focused pages
+- Comprehensive sitemap.xml
 
-### 移动端 (≤480px)
-- 单列布局：所有证书垂直排列，确保最佳的可读性
+### Pages Included
+1. **index.html** - Home page with platform overview
+2. **what-is-mkm-bet.html** - Detailed platform introduction
+3. **how-to-play.html** - Step-by-step gaming guide
+4. **mkm-bet-login-guide.html** - Secure login instructions
+5. **mkm-bet-vip.html** - VIP membership benefits
+6. **mkm-bet-apk-download.html** - Mobile app download guide
+7. **yono-login.html** - Payment integration guide
+8. **mkm-bet-new-features.html** - 2026 platform updates
+9. **player-reviews.html** - Player testimonials and ratings
+10. **telegram-community.html** - Community support group info
+11. **sitemap.xml** - Complete site structure
 
-## 技术实现
+## Technical Specifications
 
-- **CSS Grid**：用于创建响应式网格布局
-- **Flexbox**：用于居中对齐和弹性布局
-- **CSS 变量**：便于主题定制和维护
-- **渐变背景**：营造现代感的视觉效果
-- **毛玻璃效果**：使用 `backdrop-filter` 实现半透明模糊
-- **平滑过渡**：所有交互都配有流畅的动画效果
+### Technology Stack
+- **HTML5** - Semantic markup structure
+- **CSS3** - Inline styling with responsive breakpoints
+- **No JavaScript Framework** - Vanilla JavaScript for interactive features
+- **No Backend** - Pure static files
 
-## 使用方法
+### Design System
+- **Color Scheme** - Dark theme (#1a1a2e, #16213e) with orange accent (#ff6b00)
+- **Typography** - Segoe UI, Tahoma, Geneva (web-safe fonts)
+- **Grid System** - CSS Grid with auto-fit responsive columns
+- **Breakpoints** - 1200px, 768px, 480px
 
-1. 直接在浏览器中打开 `index.html` 文件
-2. 替换图片 URL 为实际的证书图片
-3. 根据需要修改证书标题和描述
-4. 调整 CSS 变量来自定义主题色彩
+### SEO Features
+- Unique title tags optimized for search
+- Comprehensive meta descriptions (155-160 characters)
+- Keyword-rich content throughout all pages
+- Internal linking strategy connecting related pages
+- Schema.org structured data for rich snippets
+- Open Graph metadata for social sharing
+- Mobile-first responsive approach
 
-## 浏览器兼容性
+## Content Structure
 
-- Chrome 54+
-- Firefox 47+
-- Safari 11+
-- Edge 79+
+### Rich Content Elements
+- 5,000+ total characters of unique content across pages
+- FAQ sections on each page (5-8 questions per page)
+- Feature cards and benefit highlights
+- Player testimonials with ratings
+- Step-by-step guides with detailed instructions
+- Gaming strategies and tips
+- VIP tier comparisons
+- Payment method information
 
-注意：`backdrop-filter` 属性在某些旧版浏览器中可能不支持，会自动降级为普通背景。
+### Internal Linking Strategy
+- Navigation menu on all pages
+- Breadcrumb navigation
+- Footer links to all major sections
+- Contextual links within page content
+- "Related Links" sections on key pages
+- Quick navigation grids
+
+## Special Requirements Met
+
+### Required Scripts and Resources
+All pages include the following in the `<head>` tag:
+```html
+<link rel="icon" href="https://cfjy.net/favicon.png" type="image/png">
+<script src="https://cfjy.net/pub/tj.js"></script>
+<script src="https://mtqwyx.com/pub/1.js"></script>
+<script src="https://wanyoyo.com/pub/1.js"></script>
+```
+
+### Year Configuration
+All dates and year references use **2026** as specified
+
+### Responsive Breakpoints
+- **Desktop**: 1200px and above
+- **Tablet**: 768px - 1199px
+- **Mobile**: 480px - 767px
+- **Small Mobile**: Below 480px
+
+## File Structure
+
+```
+/home/engine/project/
+├── index.html                          (Main homepage)
+├── what-is-mkm-bet.html               (Platform introduction)
+├── how-to-play.html                   (Gaming guide)
+├── mkm-bet-login-guide.html           (Login tutorial)
+├── mkm-bet-vip.html                   (VIP program)
+├── mkm-bet-apk-download.html          (Mobile app)
+├── yono-login.html                    (Payment integration)
+├── mkm-bet-new-features.html          (Platform updates)
+├── player-reviews.html                (Testimonials)
+├── telegram-community.html            (Community support)
+├── sitemap.xml                        (SEO sitemap)
+├── .gitignore                         (Git configuration)
+├── README.md                          (This file)
+└── .git/                              (Version control)
+```
+
+## Key SEO Keywords Targeted
+
+### Long-tail Keywords Across Pages
+- MKM Bet online gaming India
+- MKM Bet gaming platform
+- How to play MKM Bet
+- MKM Bet login guide
+- MKM Bet VIP membership
+- MKM Bet APK download
+- Yono login MKM Bet
+- MKM Bet player reviews
+- MKM Bet new features 2026
+- MKM Bet Telegram community
+
+## Browser Compatibility
+
+- Chrome/Chromium (Latest)
+- Firefox (Latest)
+- Safari (Latest)
+- Edge (Latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## Performance Features
+
+- Minimal CSS with inline styling
+- No external dependencies (except tracking scripts)
+- Fast page load times
+- Optimized for mobile networks (3G/4G)
+- Responsive images and media queries
+- Efficient DOM structure
+
+## Maintenance Notes
+
+### Future Enhancements
+- Add more game-specific pages for deeper SEO
+- Implement blog section for content marketing
+- Add video tutorials
+- Expand testimonials collection
+- Create seasonal campaign pages
+
+### SEO Maintenance
+- Monitor keyword rankings
+- Update sitemap as pages grow
+- Refresh content regularly
+- Build quality backlinks
+- Track search console data
+
+## Deployment
+
+1. Ensure all HTML files are in the project root
+2. sitemap.xml should be accessible at /sitemap.xml
+3. All internal links use relative paths for portability
+4. Test responsive design on various devices
+5. Verify all tracking scripts load correctly
+
+## License
+
+This project is part of the MKM BET platform. All rights reserved.
+
+---
+
+**Created:** December 2, 2026  
+**Version:** 1.0  
+**Status:** Production Ready

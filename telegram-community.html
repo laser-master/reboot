@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MKM Bet Telegram Community - Join thousands of Indian gaming players, get tips, share strategies, and participate in exclusive Telegram events.">
+    <meta name="keywords" content="MKM Bet Telegram, gaming community, player support, tips strategies, exclusive offers">
+    <meta name="author" content="MKM Bet">
+    <meta property="og:title" content="MKM Bet Telegram Community - Join Players Worldwide">
+    <meta property="og:type" content="website">
+    <title>MKM Bet Telegram Community - Gaming Tips & Player Support</title>
+    <link rel="icon" href="https://cfjy.net/favicon.png" type="image/png">
+    <script src="https://cfjy.net/pub/tj.js"></script>
+    <script src="https://mtqwyx.com/pub/1.js"></script>
+    <script src="https://wanyoyo.com/pub/1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff6b00;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: #ff6b00;
+        }
+
+        .btn-login {
+            background: #ff6b00;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .breadcrumb {
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: #ff6b00;
+            text-decoration: none;
+        }
+
+        .section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #ff6b00;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #1a1a2e;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #ff6b00;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #1a1a2e;
+            margin-top: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #ff6b00;
+            font-weight: bold;
+        }
+
+        .telegram-box {
+            background: linear-gradient(135deg, #0088cc 0%, #0066aa 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .telegram-box h2 {
+            color: white;
+            border: none;
+            padding-left: 0;
+        }
+
+        .telegram-btn {
+            background: white;
+            color: #0088cc;
+            padding: 1rem 2.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+            margin: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .channel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .channel-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #f9fafb 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #ff6b00;
+        }
+
+        .channel-card h3 {
+            color: #ff6b00;
+            margin-top: 0;
+        }
+
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .benefit-item {
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-left: 4px solid #ff6b00;
+            border-radius: 5px;
+        }
+
+        .benefit-item strong {
+            color: #ff6b00;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #333;
+        }
+
+        .footer-section h4 {
+            color: #ff6b00;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b00;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .community-rules {
+            background: #fff3e0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #ff9800;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .channel-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MKM BET</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="what-is-mkm-bet.html">About</a></li>
+                <li><a href="how-to-play.html">How to Play</a></li>
+                <li><a href="mkm-bet-login-guide.html">Login Guide</a></li>
+                <li><a href="mkm-bet-vip.html">VIP</a></li>
+                <li><a href="mkm-bet-apk-download.html">APK</a></li>
+                <li><button class="btn-login" onclick="window.location.href='mkm-bet-login-guide.html'">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Telegram Community</span>
+        </div>
+
+        <section class="section">
+            <h1>MKM Bet Telegram Community - Connect with Players Worldwide</h1>
+            
+            <p>Join the <span class="highlight">vibrant MKM Bet Telegram community</span> with thousands of active gaming enthusiasts from across India. Our Telegram channels provide real-time updates, gaming tips, strategy discussions, exclusive offers, and a supportive community of like-minded players. Stay connected, share experiences, and never miss important announcements and promotions.</p>
+
+            <div class="telegram-box">
+                <h2>🔵 Join MKM Bet Telegram Community Today</h2>
+                <p>Connect with over 30,000+ active players, get instant updates, and participate in community-exclusive events</p>
+                <button class="telegram-btn" onclick="alert('Telegram link would be here')">Join Main Channel</button>
+                <button class="telegram-btn" onclick="alert('Telegram link would be here')">Join Support Group</button>
+            </div>
+
+            <h2>MKM Bet Telegram Channels</h2>
+            
+            <p>We maintain several specialized Telegram channels to serve different needs of our community:</p>
+
+            <div class="channel-grid">
+                <div class="channel-card">
+                    <h3>📢 Official Announcements</h3>
+                    <p>Get the latest MKM Bet news, new game launches, platform updates, and important announcements. Subscribe to stay informed about everything happening on MKM Bet.</p>
+                </div>
+
+                <div class="channel-card">
+                    <h3>💬 Player Support Group</h3>
+                    <p>Direct support from MKM Bet team. Ask questions, report issues, request help, and get quick responses from our dedicated support staff.</p>
+                </div>
+
+                <div class="channel-card">
+                    <h3>🎮 Gaming Tips & Strategies</h3>
+                    <p>Learn winning strategies from experienced players. Share game tips, discuss gameplay techniques, and improve your skills with community insights.</p>
+                </div>
+
+                <div class="channel-card">
+                    <h3>🏆 Tournaments & Contests</h3>
+                    <p>Exclusive tournament announcements and contests. Get early access to special events and participate in high-prize competitions.</p>
+                </div>
+
+                <div class="channel-card">
+                    <h3>💰 Promotions & Offers</h3>
+                    <p>Telegram-exclusive promotional codes and special offers. Members get first access to limited-time bonuses and seasonal promotions.</p>
+                </div>
+
+                <div class="channel-card">
+                    <h3>🤝 Player Community</h3>
+                    <p>Connect with fellow players, share experiences, make friends, and discuss your gaming journey with like-minded individuals.</p>
+                </div>
+            </div>
+
+            <h2>Why Join MKM Bet Telegram Community?</h2>
+            
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <strong>⚡ Instant Updates</strong>
+                    <p>Receive real-time notifications about new games, platform updates, and special promotions before they're announced elsewhere.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>💎 Exclusive Offers</strong>
+                    <p>Telegram-exclusive bonus codes, promotional offers, and rewards not available anywhere else. Join to access special member benefits.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>📚 Learning Resources</strong>
+                    <p>Access guides, tutorials, gaming tips, and strategy discussions from expert players and the MKM Bet team.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>👥 Community Support</strong>
+                    <p>Connect with thousands of fellow players, share experiences, ask questions, and get help from community members.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>🎯 Priority Support</strong>
+                    <p>MKM Bet support team responds quickly to Telegram messages. Get issues resolved faster through direct communication.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>🏅 VIP Treatment</strong>
+                    <p>Special recognition for active community members. Possibility of becoming a channel moderator or community ambassador.</p>
+                </div>
+            </div>
+
+            <h2>What You Can Do in MKM Bet Telegram</h2>
+            
+            <h3>Share & Learn</h3>
+            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Share winning screenshots and celebrate with the community</li>
+                <li>Learn gaming strategies from experienced players</li>
+                <li>Discuss game tactics and tips</li>
+                <li>Ask questions about gameplay</li>
+            </ul>
+
+            <h3>Get Support</h3>
+            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Report technical issues</li>
+                <li>Request customer support</li>
+                <li>Provide feedback about games or features</li>
+                <li>Share suggestions for platform improvement</li>
+            </ul>
+
+            <h3>Stay Updated</h3>
+            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Get instant notifications about new features</li>
+                <li>Learn about upcoming tournaments</li>
+                <li>Find out about seasonal promotions</li>
+                <li>Receive maintenance announcements</li>
+            </ul>
+
+            <h3>Win Exclusive Rewards</h3>
+            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Participate in Telegram-exclusive contests</li>
+                <li>Redeem promotional codes for bonuses</li>
+                <li>Win prizes in community giveaways</li>
+                <li>Unlock special community achievements</li>
+            </ul>
+
+            <h2>Community Guidelines</h2>
+            
+            <div class="community-rules">
+                <h3 style="margin-top: 0;">Community Rules for Respectful Interaction:</h3>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>Be Respectful:</strong> Treat all community members with respect and courtesy</li>
+                    <li><strong>No Spam:</strong> Avoid excessive promotional content, links, or repetitive messages</li>
+                    <li><strong>Stay On Topic:</strong> Keep discussions related to MKM Bet gaming</li>
+                    <li><strong>No Harassment:</strong> Don't engage in harassment, bullying, or personal attacks</li>
+                    <li><strong>Verify Information:</strong> Share accurate information; don't spread rumors</li>
+                    <li><strong>Responsible Gaming:</strong> Promote responsible gaming practices</li>
+                    <li><strong>No Cheating:</strong> Don't discuss or promote cheating methods</li>
+                    <li><strong>Follow Laws:</strong> Respect local gaming regulations and laws</li>
+                </ul>
+            </div>
+
+            <h2>How to Get Started</h2>
+            
+            <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Download Telegram app (if not already installed)</li>
+                <li>Create a Telegram account or login</li>
+                <li>Click the Telegram link to join MKM Bet community</li>
+                <li>Read pinned messages for community guidelines</li>
+                <li>Introduce yourself in the community</li>
+                <li>Start engaging and learning from other players</li>
+                <li>Stay updated with announcements and offers</li>
+                <li>Participate in community activities and events</li>
+            </ol>
+
+            <h2>Telegram Community Statistics</h2>
+            
+            <p><strong>Active Members:</strong> 30,000+</p>
+            <p><strong>Daily Messages:</strong> 5,000+</p>
+            <p><strong>Countries Represented:</strong> Multiple (India primary)</p>
+            <p><strong>Community Moderators:</strong> 15+</p>
+            <p><strong>Channels Available:</strong> 6 main channels</p>
+
+            <p style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #ff6b00;">Join thousands of MKM Bet players in our Telegram community! Whether you need support, want to share strategies, or just want to connect with fellow gaming enthusiasts, we're here for you!</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About MKM Bet</h4>
+                <ul>
+                    <li><a href="what-is-mkm-bet.html">About Us</a></li>
+                    <li><a href="mkm-bet-new-features.html">New Features 2026</a></li>
+                    <li><a href="player-reviews.html">Player Reviews</a></li>
+                    <li><a href="telegram-community.html">Telegram Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Getting Started</h4>
+                <ul>
+                    <li><a href="mkm-bet-login-guide.html">Login Guide</a></li>
+                    <li><a href="how-to-play.html">How to Play</a></li>
+                    <li><a href="mkm-bet-apk-download.html">Download APK</a></li>
+                    <li><a href="yono-login.html">Yono Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>VIP & Rewards</h4>
+                <ul>
+                    <li><a href="mkm-bet-vip.html">VIP Membership</a></li>
+                    <li><a href="index.html#faq">FAQs</a></li>
+                    <li><a href="player-reviews.html">Testimonials</a></li>
+                    <li><a href="telegram-community.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MKM Bet - India's Premier Gaming Platform. All rights reserved.</p>
+            <p>Responsible Gaming: Please play responsibly. MKM Bet promotes fair and responsible gaming practices.</p>
+        </div>
+    </footer>
+</body>
+</html>

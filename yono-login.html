@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yono Login on MKM Bet - How to use Yono for secure payments and account access on MKM Bet gaming platform.">
+    <meta name="keywords" content="Yono login, Yono payment, Yono MKM Bet, secure payments">
+    <meta name="author" content="MKM Bet">
+    <meta property="og:title" content="Yono Login on MKM Bet - Secure Payment Method">
+    <meta property="og:type" content="article">
+    <title>Yono Login on MKM Bet - Secure Payment & Account Access | MKM Bet</title>
+    <link rel="icon" href="https://cfjy.net/favicon.png" type="image/png">
+    <script src="https://cfjy.net/pub/tj.js"></script>
+    <script src="https://mtqwyx.com/pub/1.js"></script>
+    <script src="https://wanyoyo.com/pub/1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff6b00;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: #ff6b00;
+        }
+
+        .btn-login {
+            background: #ff6b00;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-login:hover {
+            background: #e55a00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .breadcrumb {
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: #ff6b00;
+            text-decoration: none;
+        }
+
+        .section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #ff6b00;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #1a1a2e;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #ff6b00;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #1a1a2e;
+            margin-top: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #ff6b00;
+            font-weight: bold;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-box {
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-left: 4px solid #ff6b00;
+            border-radius: 5px;
+        }
+
+        .feature-box strong {
+            color: #ff6b00;
+        }
+
+        .faq-container {
+            margin: 2rem 0;
+        }
+
+        .faq-item {
+            margin: 1rem 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f5f5f5;
+            padding: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #1a1a2e;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #efefef;
+        }
+
+        .faq-question.active {
+            background: #ff6b00;
+            color: white;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 1rem;
+            background: white;
+            color: #333;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .toggle-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-question.active .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #333;
+        }
+
+        .footer-section h4 {
+            color: #ff6b00;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b00;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MKM BET</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="what-is-mkm-bet.html">About</a></li>
+                <li><a href="how-to-play.html">How to Play</a></li>
+                <li><a href="mkm-bet-login-guide.html">Login Guide</a></li>
+                <li><a href="mkm-bet-vip.html">VIP</a></li>
+                <li><a href="mkm-bet-apk-download.html">APK</a></li>
+                <li><button class="btn-login" onclick="window.location.href='mkm-bet-login-guide.html'">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Yono Login</span>
+        </div>
+
+        <section class="section">
+            <h1>Yono Login on MKM Bet - Secure Payment & Account Integration</h1>
+            
+            <p>MKM Bet fully integrates with <span class="highlight">Yono</span> - the premium digital banking solution from State Bank of India. This integration allows Indian players to enjoy secure, hassle-free payments, instant fund transfers, and seamless gaming experience. Whether you're depositing funds or withdrawing winnings, Yono login provides one of the fastest and most secure methods on MKM Bet.</p>
+
+            <h2>What is Yono and Why Use it on MKM Bet?</h2>
+            
+            <p>Yono is an innovative digital banking platform by State Bank of India designed specifically for Indian customers. When combined with MKM Bet, it offers unprecedented convenience and security for gaming transactions. With Yono login integration, you get instant fund transfers, lower fees, and bank-level security.</p>
+
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <strong>🏦 Bank-Level Security</strong>
+                    <p>Backed by India's largest bank, ensuring maximum protection for your financial data.</p>
+                </div>
+                <div class="feature-box">
+                    <strong>⚡ Instant Transfers</strong>
+                    <p>Deposit and withdraw funds instantly without delays or processing time.</p>
+                </div>
+                <div class="feature-box">
+                    <strong>💳 No Extra Fees</strong>
+                    <p>Yono transactions have minimal transaction fees compared to credit cards.</p>
+                </div>
+                <div class="feature-box">
+                    <strong>📱 Seamless Integration</strong>
+                    <p>One-click login and payment using your Yono credentials and SBI account.</p>
+                </div>
+                <div class="feature-box">
+                    <strong>🔐 Multi-Layer Security</strong>
+                    <p>OTP verification, encryption, and fraud detection for every transaction.</p>
+                </div>
+                <div class="feature-box">
+                    <strong>💰 Daily Limits</strong>
+                    <p>High daily transaction limits allowing you to deposit and withdraw large amounts.</p>
+                </div>
+            </div>
+
+            <h2>How to Link Yono with Your MKM Bet Account</h2>
+            
+            <h3>Prerequisites:</h3>
+            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Active SBI bank account</li>
+                <li>Registered Yono account</li>
+                <li>Active MKM Bet account</li>
+                <li>Valid mobile number linked to SBI account</li>
+            </ul>
+
+            <h3>Step-by-Step Linking Process:</h3>
+            <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Login to your MKM Bet account</li>
+                <li>Navigate to "Payment Methods" or "Wallet" section</li>
+                <li>Click "Add Payment Method"</li>
+                <li>Select "Yono" from payment options</li>
+                <li>Click "Link Yono Account"</li>
+                <li>You'll be redirected to Yono login page</li>
+                <li>Enter your Yono credentials</li>
+                <li>Complete OTP verification</li>
+                <li>Authorize MKM Bet to access your account</li>
+                <li>Successfully linked! Ready to use</li>
+            </ol>
+
+            <h2>Using Yono for Deposits on MKM Bet</h2>
+            
+            <h3>Quick Deposit Guide:</h3>
+            <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Go to "Add Funds" or "Deposit" section</li>
+                <li>Select "Yono" as payment method</li>
+                <li>Enter deposit amount (₹100 - ₹1,00,000)</li>
+                <li>Review transaction details</li>
+                <li>Click "Proceed with Yono"</li>
+                <li>Authenticate with Yono app or SMS OTP</li>
+                <li>Confirm payment in Yono</li>
+                <li>Funds credited instantly to your MKM Bet account</li>
+            </ol>
+
+            <h2>Using Yono for Withdrawals from MKM Bet</h2>
+            
+            <h3>Fast Withdrawal Process:</h3>
+            <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Open MKM Bet and go to "Withdraw" section</li>
+                <li>Select "Yono" as withdrawal method</li>
+                <li>Enter amount you wish to withdraw</li>
+                <li>Verify your linked Yono account details</li>
+                <li>Submit withdrawal request</li>
+                <li>Funds transferred to your SBI account</li>
+                <li>Received notification on both platforms</li>
+                <li>Money available in your bank account</li>
+            </ol>
+
+            <h2>Yono Transaction Limits & Fees</h2>
+            
+            <h3>Deposit Limits:</h3>
+            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Minimum Deposit: ₹100</li>
+                <li>Maximum Per Transaction: ₹1,00,000</li>
+                <li>Daily Limit: ₹5,00,000</li>
+                <li>Transaction Fee: 0% (Free for MKM Bet players)</li>
+            </ul>
+
+            <h3>Withdrawal Limits:</h3>
+            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Minimum Withdrawal: ₹100</li>
+                <li>Maximum Per Transaction: ₹1,00,000</li>
+                <li>Daily Limit: ₹5,00,000</li>
+                <li>Transaction Fee: 0% (Free for MKM Bet players)</li>
+            </ul>
+
+            <h2>Frequently Asked Questions - Yono Login</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is Yono payment safe on MKM Bet?</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely! Yono is backed by State Bank of India with enterprise-grade security, SSL encryption, OTP verification, and fraud detection. Your transactions are completely safe.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do I need a separate Yono account to use it on MKM Bet?</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you need an active Yono account linked to your SBI bank account. If you don't have one, download the Yono app and register for free.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long do Yono deposits take to appear?</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yono deposits are instant! Funds appear in your MKM Bet account immediately after successful payment authorization.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What are Yono transaction fees on MKM Bet?</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>MKM Bet absorbs all transaction fees for Yono payments! You deposit and withdraw 0% fees - the full amount reaches your account.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I link multiple Yono accounts to MKM Bet?</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can link multiple Yono accounts as long as they're registered to you. MKM Bet allows this for player convenience.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What if I forget my Yono password?</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Reset your Yono password through the Yono app. This won't affect your MKM Bet account. Simply re-authenticate when making your next transaction.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is Yono available for all MKM Bet players?</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, any MKM Bet player with an active SBI account and Yono app can use Yono for deposits and withdrawals. No restrictions or special eligibility required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About MKM Bet</h4>
+                <ul>
+                    <li><a href="what-is-mkm-bet.html">About Us</a></li>
+                    <li><a href="mkm-bet-new-features.html">New Features 2026</a></li>
+                    <li><a href="player-reviews.html">Player Reviews</a></li>
+                    <li><a href="telegram-community.html">Telegram Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Getting Started</h4>
+                <ul>
+                    <li><a href="mkm-bet-login-guide.html">Login Guide</a></li>
+                    <li><a href="how-to-play.html">How to Play</a></li>
+                    <li><a href="mkm-bet-apk-download.html">Download APK</a></li>
+                    <li><a href="yono-login.html">Yono Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>VIP & Rewards</h4>
+                <ul>
+                    <li><a href="mkm-bet-vip.html">VIP Membership</a></li>
+                    <li><a href="index.html#faq">FAQs</a></li>
+                    <li><a href="player-reviews.html">Testimonials</a></li>
+                    <li><a href="telegram-community.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MKM Bet - India's Premier Gaming Platform. All rights reserved.</p>
+            <p>Responsible Gaming: Please play responsibly. MKM Bet promotes fair and responsible gaming practices.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            element.classList.toggle('active');
+            answer.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
