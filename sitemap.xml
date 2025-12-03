@@ -1,63 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Homepage - Highest Priority -->
     <url>
-        <loc>http://szs0722.com/</loc>
+        <loc>http://wdqyw168.com/</loc>
         <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+    
+    <!-- Main Platform Pages -->
     <url>
-        <loc>http://szs0722.com/what-is-mkm-bet.html</loc>
+        <loc>http://wdqyw168.com/what-is-en365.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
+    
     <url>
-        <loc>http://szs0722.com/how-to-play.html</loc>
+        <loc>http://wdqyw168.com/how-to-play.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
+    
     <url>
-        <loc>http://szs0722.com/mkm-bet-login-guide.html</loc>
+        <loc>http://wdqyw168.com/player-reviews.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
+    
+    <!-- Access & Login Pages -->
     <url>
-        <loc>http://szs0722.com/mkm-bet-vip.html</loc>
+        <loc>http://wdqyw168.com/en365-apk-download.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    
     <url>
-        <loc>http://szs0722.com/mkm-bet-apk-download.html</loc>
+        <loc>http://wdqyw168.com/en365-login.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    
     <url>
-        <loc>http://szs0722.com/yono-login.html</loc>
+        <loc>http://wdqyw168.com/yono-en365.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    
     <url>
-        <loc>http://szs0722.com/mkm-bet-new-features.html</loc>
+        <loc>http://wdqyw168.com/en365-register.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Game-Specific Pages -->
+    <url>
+        <loc>http://wdqyw168.com/rummy-365.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://wdqyw168.com/spin-365.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://wdqyw168.com/poker-365.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+    
     <url>
-        <loc>http://szs0722.com/player-reviews.html</loc>
+        <loc>http://wdqyw168.com/teen-patti-365.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+    
+    <!-- Additional Game Pages -->
     <url>
-        <loc>http://szs0722.com/telegram-community.html</loc>
+        <loc>http://wdqyw168.com/en365-games.html</loc>
         <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
+    
+    <!-- Support Pages -->
+    <url>
+        <loc>http://wdqyw168.com/faq.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>http://wdqyw168.com/contact.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>http://wdqyw168.com/terms.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>http://wdqyw168.com/privacy.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
 </urlset>
