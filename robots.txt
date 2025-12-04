@@ -1,0 +1,54 @@
+# robots.txt for Good Slots gaming platform
+# Generated: 2026-02-20
+
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow crawling of static assets
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+Allow: *.woff
+Allow: *.woff2
+Allow: *.ttf
+Allow: *.eot
+
+# Crawl delay for courtesy
+Crawl-delay: 1
+
+# Sitemap reference
+Sitemap: http://wendyer.com/sitemap.xml
+
+# Google-specific settings
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+Crawl-delay: 0.5
+
+# Bing-specific settings
+User-agent: Bingbot
+Allow: /
+Disallow: /private/
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
