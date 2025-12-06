@@ -4,25 +4,43 @@
     
     <!-- Home Page -->
     <url>
-        <loc>http://zhyw-china.com/index.html</loc>
+        <loc>http://zxtcj.com/index.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <mobile:mobile/>
     </url>
     
-    <!-- APK Download Page -->
+    <!-- What is Rummy -->
     <url>
-        <loc>http://zhyw-china.com/rummy-app-download-apk.html</loc>
+        <loc>http://zxtcj.com/what-is-rummy.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
         <mobile:mobile/>
     </url>
     
+    <!-- How to Play Rummy -->
+    <url>
+        <loc>http://zxtcj.com/how-to-play-rummy.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- APK Download Page -->
+    <url>
+        <loc>http://zxtcj.com/rummy-app-download-apk.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+        <mobile:mobile/>
+    </url>
+    
     <!-- Best Online Rummy App -->
     <url>
-        <loc>http://zhyw-china.com/best-online-rummy-app.html</loc>
+        <loc>http://zxtcj.com/best-online-rummy-app.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
@@ -31,16 +49,52 @@
     
     <!-- Online Cash Rummy App -->
     <url>
-        <loc>http://zhyw-china.com/online-cash-rummy-app.html</loc>
+        <loc>http://zxtcj.com/online-cash-rummy-app.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
         <mobile:mobile/>
     </url>
     
+    <!-- Rummy Reviews -->
+    <url>
+        <loc>http://zxtcj.com/rummy-reviews.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- Rummy Strategy Guide -->
+    <url>
+        <loc>http://zxtcj.com/rummy-strategy-guide.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- Rummy FAQs -->
+    <url>
+        <loc>http://zxtcj.com/rummy-faqs.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- Contact Support -->
+    <url>
+        <loc>http://zxtcj.com/contact-support.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+        <mobile:mobile/>
+    </url>
+    
     <!-- A23 Rummy App Review -->
     <url>
-        <loc>http://zhyw-china.com/a23-rummy-app-review.html</loc>
+        <loc>http://zxtcj.com/a23-rummy-app-review.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
@@ -49,7 +103,7 @@
     
     <!-- Original Rummy App -->
     <url>
-        <loc>http://zhyw-china.com/original-rummy-app.html</loc>
+        <loc>http://zxtcj.com/original-rummy-app.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
@@ -58,7 +112,7 @@
     
     <!-- Rummy Gold & Circle App -->
     <url>
-        <loc>http://zhyw-china.com/rummy-gold-circle-app.html</loc>
+        <loc>http://zxtcj.com/rummy-gold-circle-app.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
@@ -67,7 +121,7 @@
     
     <!-- Rummy Game Online -->
     <url>
-        <loc>http://zhyw-china.com/rummy-game-online.html</loc>
+        <loc>http://zxtcj.com/rummy-game-online.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
@@ -76,7 +130,7 @@
     
     <!-- Pak Rummy Game -->
     <url>
-        <loc>http://zhyw-china.com/pak-rummy-game.html</loc>
+        <loc>http://zxtcj.com/pak-rummy-game.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
