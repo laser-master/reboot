@@ -1,0 +1,46 @@
+# Rummy App SEO Website - robots.txt Configuration
+# Version: 1.0
+# Last Updated: January 2026
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow private pages (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Specify sitemap location
+Sitemap: http://zhyw-china.com/sitemap.xml
+
+# Crawl delay to prevent server overload (in seconds)
+Crawl-delay: 1
+
+# Request rate (requests per second)
+Request-rate: 1/1
+
+# Specific rules for GoogleBot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for BingBot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Specific rules for Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Additional configuration
+# Maximum file size for indexing
+# Max-size: 10000000 (10MB)
