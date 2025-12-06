@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+    
+    <!-- Home Page -->
+    <url>
+        <loc>http://zhyw-china.com/index.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- APK Download Page -->
+    <url>
+        <loc>http://zhyw-china.com/rummy-app-download-apk.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- Best Online Rummy App -->
+    <url>
+        <loc>http://zhyw-china.com/best-online-rummy-app.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- Online Cash Rummy App -->
+    <url>
+        <loc>http://zhyw-china.com/online-cash-rummy-app.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- A23 Rummy App Review -->
+    <url>
+        <loc>http://zhyw-china.com/a23-rummy-app-review.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- Original Rummy App -->
+    <url>
+        <loc>http://zhyw-china.com/original-rummy-app.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- Rummy Gold & Circle App -->
+    <url>
+        <loc>http://zhyw-china.com/rummy-gold-circle-app.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- Rummy Game Online -->
+    <url>
+        <loc>http://zhyw-china.com/rummy-game-online.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+        <mobile:mobile/>
+    </url>
+    
+    <!-- Pak Rummy Game -->
+    <url>
+        <loc>http://zhyw-china.com/pak-rummy-game.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+        <mobile:mobile/>
+    </url>
+    
+</urlset>
