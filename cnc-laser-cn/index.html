@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNC激光切割技术 - 专业激光加工制造商 | 高精度切割服务</title>
+    <meta name="description" content="专业CNC激光切割制造商，提供钢板、不锈钢、铝合金等材料的高精度切割服务。20年行业经验，ISO认证，快速交付。">
+    <meta name="keywords" content="CNC激光切割,激光加工,钢板切割,不锈钢加工,铝合金切割,金属加工,精密制造,激光切割服务">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CNC激光切割技术 - 专业激光加工制造商">
+    <meta property="og:description" content="专业CNC激光切割制造商，提供钢板、不锈钢、铝合金等材料的高精度切割服务。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CNC激光切割技术有限公司",
+        "description": "专业CNC激光切割制造商",
+        "url": "https://cnc-laser-cn.com",
+        "logo": "assets/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-400-123-4567",
+            "contactType": "customer service"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "工业园区激光大道123号",
+            "addressLocality": "深圳市",
+            "addressRegion": "广东省",
+            "postalCode": "518000",
+            "addressCountry": "CN"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: #fbbf24;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(59, 130, 246, 0.8)), url('assets/images/cnc-laser-factory.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #fbbf24;
+            color: #1e3a8a;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: #f59e0b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+        }
+        
+        /* Main Content */
+        main {
+            margin-top: 0;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e3a8a;
+        }
+        
+        .section:nth-child(even) {
+            background: white;
+        }
+        
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-image {
+            height: 200px;
+            background: linear-gradient(45deg, #3b82f6, #1e3a8a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+        }
+        
+        .service-content h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-item {
+            padding: 2rem 0;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fbbf24;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+        
+        .gallery-item {
+            aspect-ratio: 4/3;
+            background: linear-gradient(45deg, #6b7280, #9ca3af);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: #fbbf24;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: #fbbf24;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 1rem;
+            text-align: center;
+            color: #9ca3af;
+        }
+        
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #f3f4f6;
+            padding: 1rem 0;
+            margin-top: 80px;
+        }
+        
+        .breadcrumbs a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+        
+        @media (max-width: 520px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .features-grid,
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CNC激光切割</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>专业CNC激光切割服务</h1>
+                <p>高精度、高效率的激光加工解决方案，为您的制造业提供卓越品质</p>
+                <a href="contact.html" class="cta-button">立即咨询</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>为什么选择我们</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>高精度加工</h3>
+                        <p>采用德国进口激光器，切割精度可达±0.1mm，满足精密制造要求</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>快速交付</h3>
+                        <p>24小时内响应，48小时快速交付，急件当天完成生产</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>质量保证</h3>
+                        <p>ISO9001质量管理体系，每件产品都经过严格质检</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>全球服务</h3>
+                        <p>服务遍及30多个国家和地区，拥有完善的物流配送体系</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>价格优势</h3>
+                        <p>直接工厂价格，无中间环节，为您节省30%以上成本</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>技术支持</h3>
+                        <p>专业工程师团队，提供从设计到生产的一站式技术支持</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stats">
+            <div class="container">
+                <h2>数据说话</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">年行业经验</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50,000+</span>
+                        <span class="stat-label">成功项目</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.8%</span>
+                        <span class="stat-label">客户满意度</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">服务国家</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>核心服务</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">🔩</div>
+                        <div class="service-content">
+                            <h3>钢板切割</h3>
+                            <p>专业钢板激光切割服务，支持碳钢、不锈钢等多种材质，厚度范围0.5-25mm</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">🔧</div>
+                        <div class="service-content">
+                            <h3>精密加工</h3>
+                            <p>高精度激光切割，适用于机械零件、模具加工等精密制造领域</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">🏭</div>
+                        <div class="service-content">
+                            <h3>批量生产</h3>
+                            <p>大规模批量生产优势，日产能达1000件，满足大批量订单需求</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">🎯</div>
+                        <div class="service-content">
+                            <h3>定制服务</h3>
+                            <p>根据客户需求提供定制化解决方案，从图纸设计到成品交付</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>生产设备展示</h2>
+                <div class="gallery">
+                    <div class="gallery-item">激光切割机</div>
+                    <div class="gallery-item">生产线</div>
+                    <div class="gallery-item">质检设备</div>
+                    <div class="gallery-item">成品仓库</div>
+                    <div class="gallery-item">精密仪器</div>
+                    <div class="gallery-item">自动化设备</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>合作案例</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>汽车零部件</h3>
+                        <p>为多家知名汽车制造商提供精密激光切割服务，批量生产汽车冲压件</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>建筑装饰</h3>
+                        <p>承接大型建筑项目的金属装饰板切割业务，品质得到客户一致好评</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>电子设备</h3>
+                        <p>为电子产品制造商提供精密金属外壳切割，满足电子产品严格要求</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>公司信息</h3>
+                    <a href="about.html">公司简介</a>
+                    <a href="#">发展历程</a>
+                    <a href="#">企业文化</a>
+                    <a href="#">资质认证</a>
+                </div>
+                <div class="footer-section">
+                    <h3>产品服务</h3>
+                    <a href="#">激光切割</a>
+                    <a href="#">精密加工</a>
+                    <a href="#">定制服务</a>
+                    <a href="#">技术支持</a>
+                </div>
+                <div class="footer-section">
+                    <h3>客户服务</h3>
+                    <a href="contact.html">联系我们</a>
+                    <a href="#">在线咨询</a>
+                    <a href="#">售后服务</a>
+                    <a href="#">常见问题</a>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>电话: +86-400-123-4567</p>
+                    <p>邮箱: info@cnc-laser-cn.com</p>
+                    <p>地址: 深圳市宝安区工业园区</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 CNC激光切割技术有限公司. 版权所有 | 网站备案号: 粤ICP备xxxxxxxx号</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
