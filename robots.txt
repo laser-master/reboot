@@ -1,0 +1,6 @@
+User-agent:*
+Disallow: /phoenix/
+Allow: /phoenix/admin/ext/
+Allow: /
+
+Sitemap: https://www.redsail-laser.com/sitemap.xml
