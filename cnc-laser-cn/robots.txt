@@ -1,0 +1,52 @@
+# Robots.txt for Redsail Laser Equipment Website
+# Domain: https://cnc-laser.cn
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+
+# Disallow crawling of development files and sensitive directories
+Disallow: /assets/docs/
+Disallow: /.git/
+Disallow: /temp/
+Disallow: /*.pdf$
+Disallow: /*.exe$
+Disallow: /debug/
+Disallow: /test/
+
+# Allow crawling of important files
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /products/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Sitemap location
+Sitemap: https://cnc-laser.cn/sitemap.xml
+
+# Crawl delay (optional - be respectful to servers)
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Note: This robots.txt allows full access to help with SEO indexing
+# Update the sitemap location if the domain changes
+# Remove any sensitive paths that should not be indexed

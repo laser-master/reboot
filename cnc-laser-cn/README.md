@@ -141,17 +141,44 @@ cnc-laser-cn/
 3. **访问网站**
    打开浏览器访问 `http://localhost:8000`
 
-### 部署说明
+### 部署到 cnc-laser.cn 域名
 
-#### 静态网站部署
-由于这是纯静态网站，可以部署到任何静态网站托管服务：
+#### 域名和DNS配置
 
-- **Vercel**: 连接GitHub仓库自动部署
-- **Netlify**: 拖拽文件夹或连接Git仓库
-- **GitHub Pages**: 在仓库设置中启用
-- **阿里云OSS**: 静态网站托管
-- **腾讯云COS**: 静态网站托管
-- **传统虚拟主机**: 通过FTP上传文件
+1. **域名设置**
+   - 确保域名 `cnc-laser.cn` 已注册并可管理
+   - 域名需要备案（如果在中国大陆服务器部署）
+
+2. **DNS配置**
+   ```
+   # 记录类型: A
+   # 主机记录: @
+   # 记录值: [服务器IP地址]
+   # TTL: 600
+   
+   # 记录类型: A  
+   # 主机记录: www
+   # 记录值: [服务器IP地址]
+   # TTL: 600
+   
+   # 记录类型: CNAME
+   # 主机记录: *
+   # 记录值: cnc-laser.cn
+   # TTL: 600
+   ```
+
+#### 推荐部署平台
+
+**国内平台（推荐）：**
+- **阿里云ECS + CDN**: 高性能，适合国内访问
+- **腾讯云CVM + CDN**: 稳定性好，技术支持完善
+- **华为云弹性云服务器**: 企业级解决方案
+- **阿里云OSS静态网站托管**: 简单易用，成本低
+
+**海外平台：**
+- **Vercel**: 全球CDN，部署简单
+- **Netlify**: 功能强大，自动化部署
+- **GitHub Pages**: 免费，但访问国内较慢
 
 #### 部署步骤
 
@@ -159,19 +186,158 @@ cnc-laser-cn/
    ```bash
    # 确保所有文件都在 cnc-laser-cn/ 目录中
    ls -la cnc-laser-cn/
+   
+   # 检查必要文件
+   cnc-laser-cn/
+   ├── index.html              # 主页
+   ├── about.html              # 关于我们
+   ├── contact.html            # 联系我们
+   ├── sitemap.xml             # SEO站点地图
+   ├── robots.txt              # 搜索引擎爬虫配置
+   ├── products/               # 产品中心
+   └── assets/                 # 静态资源
    ```
 
-2. **上传文件**
+2. **上传文件到服务器**
    ```bash
    # 使用rsync同步到服务器
    rsync -avz --delete cnc-laser-cn/ user@server:/path/to/webroot/
+   
+   # 或者使用scp
+   scp -r cnc-laser-cn/* user@server:/var/www/cnc-laser.cn/
    ```
 
-3. **配置服务器**
-   - 设置默认索引文件为 `index.html`
-   - 配置GZIP压缩
-   - 设置缓存策略
-   - 配置HTTPS（推荐）
+3. **配置Web服务器**
+
+   **Apache (.htaccess):**
+   ```apache
+   # 强制HTTPS重定向
+   RewriteEngine On
+   RewriteCond %{HTTPS} off
+   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+   
+   # 启用GZIP压缩
+   <IfModule mod_deflate.c>
+       AddOutputFilterByType DEFLATE text/plain
+       AddOutputFilterByType DEFLATE text/html
+       AddOutputFilterByType DEFLATE text/xml
+       AddOutputFilterByType DEFLATE text/css
+       AddOutputFilterByType DEFLATE application/xml
+       AddOutputFilterByType DEFLATE application/xhtml+xml
+       AddOutputFilterByType DEFLATE application/rss+xml
+       AddOutputFilterByType DEFLATE application/javascript
+       AddOutputFilterByType DEFLATE application/x-javascript
+   </IfModule>
+   
+   # 设置缓存
+   <IfModule mod_expires.c>
+       ExpiresActive On
+       ExpiresByType text/css "access plus 1 month"
+       ExpiresByType application/javascript "access plus 1 month"
+       ExpiresByType image/png "access plus 1 year"
+       ExpiresByType image/jpg "access plus 1 year"
+       ExpiresByType image/jpeg "access plus 1 year"
+       ExpiresByType image/gif "access plus 1 year"
+       ExpiresByType image/webp "access plus 1 year"
+   </IfModule>
+   
+   # 安全头
+   Header always set X-Content-Type-Options nosniff
+   Header always set X-Frame-Options DENY
+   Header always set X-XSS-Protection "1; mode=block"
+   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+   ```
+
+   **Nginx:**
+   ```nginx
+   server {
+       listen 80;
+       listen 443 ssl http2;
+       server_name cnc-laser.cn www.cnc-laser.cn;
+       root /var/www/cnc-laser.cn;
+       index index.html;
+       
+       # SSL配置
+       ssl_certificate /path/to/certificate.crt;
+       ssl_certificate_key /path/to/private.key;
+       ssl_protocols TLSv1.2 TLSv1.3;
+       
+       # 强制HTTPS
+       if ($server_port !~ 443){
+           rewrite ^(/.*)$ https://$host$1 permanent;
+       }
+       
+       # GZIP压缩
+       gzip on;
+       gzip_types text/plain text/css application/javascript application/json application/xml;
+       
+       # 静态资源缓存
+       location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg|webp)$ {
+           expires 1y;
+           add_header Cache-Control "public, immutable";
+       }
+       
+       # HTML文件缓存
+       location ~* \.html$ {
+           expires 1h;
+           add_header Cache-Control "public";
+       }
+       
+       # 禁止访问敏感文件
+       location ~ /\. {
+           deny all;
+       }
+       
+       # 安全头
+       add_header X-Frame-Options "SAMEORIGIN" always;
+       add_header X-Content-Type-Options "nosniff" always;
+       add_header X-XSS-Protection "1; mode=block" always;
+       add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+       add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+   }
+   ```
+
+#### SEO和性能优化配置
+
+1. **CDN配置**
+   - 阿里云CDN或腾讯云CDN
+   - 开启GZIP压缩
+   - 设置合适的缓存策略
+   - 启用HTTP/2
+
+2. **搜索引擎优化**
+   - 提交sitemap.xml到搜索引擎
+   - 配置robots.txt（已提供）
+   - 设置canonical标签（已添加）
+   - 添加结构化数据标记（已添加）
+
+3. **监控和分析**
+   - 安装Google Analytics
+   - 配置百度统计（适合国内）
+   - 设置搜索引擎站长工具
+
+#### 一日部署清单
+
+**上午（准备阶段）：**
+- [ ] 域名DNS解析配置
+- [ ] 服务器环境准备
+- [ ] SSL证书申请和配置
+- [ ] 网站文件上传
+
+**下午（配置阶段）：**
+- [ ] Web服务器配置
+- [ ] CDN配置和测试
+- [ ] SEO设置验证
+- [ ] 性能测试和优化
+
+**验证清单：**
+- [ ] 所有页面正常访问
+- [ ] HTTPS证书正常工作
+- [ ] 移动端显示正常
+- [ ] 搜索引擎可以爬取
+- [ ] 页面加载速度良好
+- [ ] 所有链接正常工作
 
 ### 环境配置
 
